@@ -17,5 +17,6 @@ run: vet
 .PHONY:run
 
 build: vet
+	mkdir -p bin
 	go build -o bin/goDemoProject cmd/goDemoProject/main.go
 .PHONY:build
